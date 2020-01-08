@@ -13,7 +13,7 @@ const App = () => {
   const { editModeEnabled } = useContext(BillContext)
 
   return (
-    <div className="bills-container">
+    <div className="bills-container container">
       {
         editModeEnabled ? <EditBills /> : <span><BillOptions /><AddBill /><BillTotal /><BillList /></span>
       }       

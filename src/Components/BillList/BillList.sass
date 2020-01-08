@@ -1,7 +1,9 @@
 .bill-list-container
   margin: auto
   box-sizing: border-box
-  width: 300px
+  max-width: 300px
+  width: 100%
+  
 
 .bill-list-row
   display: block
@@ -10,7 +12,13 @@
   display: inline-block
 
 .edit-mode-btn
+  margin-top: 20px
   text-align: center
   cursor: pointer
   &:hover
     color: blue
+
+
+@media (max-width: 424px)
+  .bill-list-container
+    padding-left: 20px
